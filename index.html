@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMax - Catálogo de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="login-section" id="loginSection">
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="loginEmail" 
+                            placeholder="Correo electrónico"
+                            required
+                            class="login-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="password" 
+                            id="loginPassword" 
+                            placeholder="Contraseña"
+                            required
+                            class="login-input"
+                        >
+                    </div>
+                    <button type="submit" class="login-btn">Iniciar Sesión</button>
+                </form>
+                <div class="user-info" id="userInfo" style="display: none;">
+                    <span id="username"></span>
+                    <button class="logout-btn" id="logoutBtn">Cerrar Sesión</button>
+                </div>
+            </div>
+            <h1>🎬 CineMax</h1>
+            <p>Tu catálogo de películas favoritas</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="filters">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Buscar película..."
+                    class="search-input"
+                >
+                <select id="genreFilter" class="genre-select">
+                    <option value="">Todos los géneros</option>
+                    <option value="Acción">Acción</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Animación">Animación</option>
+                </select>
+            </section>
+
+            <section id="moviesContainer" class="movies-grid">
+                <!-- Las películas se cargarán aquí con JavaScript -->
+            </section>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No se encontraron películas que coincidan con tu búsqueda.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CineMax. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
