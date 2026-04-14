@@ -1,0 +1,2 @@
+Prompt 1 (Estructura inicial): "Genera un archivo HTML5 básico para un sitio web de películas llamado 'Movies-Web' con un menú de navegación y un footer."
+prompt 2 (diseño): "Genera un diseño oscuro (dark mode) con una cuadrícula (grid) para mostrar pósters de películas."
